@@ -7,24 +7,19 @@
 
   <body>
     <section id="photos">
+    </section>
 
     <script>
-    function getRandomSize(min, max) {
-  return Math.round(Math.random() * (max - min) + min);
-}
+      var allImages = "";
 
-var allImages = "";
+      for (var i = 1; i <= 47; i++) {
+        allImages += '<img src="'+i+'.gif" alt="pretty kitty">';
+      }
 
-for (var i = 1; i <= 44; i++) {
-  var width = getRandomSize(200, 400);
-  var height =  getRandomSize(200, 400);
-  allImages += '<img src="'+i+'.gif" alt="pretty kitty">';
-}
-
-$('#photos').append(allImages);
-</script>
+      $('#photos').append(allImages);
+    </script>
 
 
-  </section>
+
   </body>
 </html>
